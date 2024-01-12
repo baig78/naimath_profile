@@ -4,6 +4,7 @@ import Home from "./components/pages/home/Home";
 import About from "./components/pages/about/About";
 import Contact from "./components/pages/contact/Contact";
 import Header from "./components/shared/header/Header";
+import FullWidthImage from "./components/pages/fullwidthImage/FullWidthImage";
 
 function App() {
   // const Home = () => <div>Home Page</div>;
@@ -13,6 +14,7 @@ function App() {
     <>
       <Router>
         <div>
+          <FullWidthImage />
           <Header />
           <Switch>
             <Route path="/" exact component={Home} />
