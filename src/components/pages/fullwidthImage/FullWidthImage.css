@@ -1,0 +1,119 @@
+.full-width-image {
+  height: 100vh; /* Set the height as per your design */
+  background-image: url("../../../assets/test.jpg"); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff; /* Set text color to be visible on the image */
+}
+
+.banner-txt-position {
+  font-size: 1.5rem;
+}
+
+.text-uppercase {
+  font-weight: 700;
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
+.typist-text {
+  font-weight: 600;
+}
+
+.hero-subtitle {
+  font-size: 1.8rem;
+  line-height: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.social-icons {
+  margin: 20px 0;
+}
+/* .social-icons a {
+  line-height: 33px;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  margin: 0 2px;
+  text-align: center;
+  color: #737373;
+  border: 1px solid #e4e4e4;
+  border-radius: 50%;
+} */
+
+.social-icons a:hover {
+  color: #fff;
+  border-color: #000;
+  background: #000;
+}
+.social-icons a {
+  line-height: 33px;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  margin: 0 2px;
+  text-align: center;
+  color: #b9b9b9;
+  border: 1px solid #e4e4e4;
+  border-radius: 50%;
+}
+
+.go-down {
+  font-size: 3.3rem;
+  position: absolute;
+  bottom: 7.2rem;
+  left: 0;
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.go-down .mouse {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 26px;
+  height: 42px;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border: 2px solid #fff;
+  border-radius: 26px;
+  /* -webkit-backface-visibility: hidden; */
+}
+
+.go-down .mouse:after {
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  width: 4px;
+  height: 4px;
+  margin-left: -2px;
+  content: "";
+  -webkit-transform: translateY(0) scaleY(1) scaleX(1) translateZ(0);
+  transform: translateY(0) scaleY(1) scaleX(1) translateZ(0);
+  -webkit-animation: scroll 1.5s -1s cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite;
+  animation: scroll 1.5s -1s cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite;
+  opacity: 1;
+  border-radius: 100%;
+  background-color: #fff;
+  transition: background-color 2s ease-in-out;
+}
+
+@keyframes scroll {
+  /* 0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0) scaleY(1) scaleX(1) translateZ(0);
+  } */
+  100% {
+    transform: translateY(20px) scaleY(0.01) scaleX(1) translateZ(0);
+  }
+}
